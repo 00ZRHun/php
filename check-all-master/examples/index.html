@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>check-all demo</title>
+</head>
+<body>
+  <div data-check-all-container>
+    Count: <span data-check-all-count>0</span>
+    <label><input type="checkbox" data-check-all> Check All</label>
+    <label><input type="checkbox" data-check-all-item> github/fetch</label>
+    <label><input type="checkbox" data-check-all-item> github/textarea-autosize</label>
+    <label><input type="checkbox" data-check-all-item> github/eventlistener-polyfill</label>
+    <label><input type="checkbox" data-check-all-item> github/quote-selection</label>
+  </div>
+  <!-- GitHub Pages demo -->
+  <script type="text/javascript" src="https://unpkg.com/@github/check-all@latest"></script>
+  <script type="text/javascript">
+    checkAll.default(document.querySelector('[data-check-all-container]'))
+  </script>
+  <!-- Uncomment to test in development -->
+  <!--<script type="module">
+    import checkAll from '../dist/check-all.esm.js'
+    checkAll(document.querySelector('[data-check-all-container]'))
+  </script>-->
+</body>
+</html>
